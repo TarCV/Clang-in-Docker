@@ -46,6 +46,6 @@ jobs:
           name: Push Docker image
           command: |
             if [ "${CIRCLE_BRANCH}" == "hub" ]; then
-#              docker tag container "${ECR_ENDPOINT}/container:${CIRCLE_SHA1}"
+#              docker tag container  "${ECR_ENDPOINT}/container:${CIRCLE_SHA1}"
 #              docker push "${ECR_ENDPOINT}/container:${CIRCLE_SHA1}"
             fi
